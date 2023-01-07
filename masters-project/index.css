@@ -1,0 +1,144 @@
+body {
+  /*width: 90%;*/
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+svg {
+	display: inline-block;
+	margin-right: 350px;
+	margin-top: 20px;
+	-webkit-margin-collapse: separate;
+}
+
+h4 {
+/*	display: inline-block;*/
+	margin: 0 50px 0 50px;
+}
+
+hr { 
+	width:75%; 
+	height:1px;
+	margin-top: 30px;
+	background: black; 
+}
+
+ul {
+	list-style-type: none;
+}
+li {
+	margin-left:10px;
+	font-size:12px;
+}
+
+/*mapping*/
+path.census {
+  fill: none;
+  stroke: #000000;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+path.neighborhood {
+  fill: white;
+  stroke: #000000;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+path.neighborhood:hover {
+  opacity: 0.5;
+}
+
+/*tooltips*/
+div.tract-tooltip, div.bus-tooltip, div.airbnb-tooltip {	
+    position: absolute;				
+    width: 250px;					
+    height: 35px;
+	padding-top: 10px;
+	text-align: center;
+	vertical-align: middle;
+    font: 12px 'Roboto', sans-serif;
+    background: lightsteelblue;	
+    border: 1px solid black;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+div.nbrhood-tooltip {	
+    position: absolute;				
+    width: 300px;					
+    height: 35px;
+	padding-top: 12px;
+    font: 12px 'Roboto', sans-serif;
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;
+}
+
+div.bus-tooltip, div.airbnb-tooltip {			
+    width: 200px;					
+/*	padding-top: 17px;*/
+    background: snow;	
+}
+
+div.airbnb-tooltip {
+	background: #fd5c63;
+	opacity: 0.3;
+}
+
+/*data points*/
+.bus {
+	visibility: visible;
+}
+
+button {
+	border:1px solid black;
+	border-radius:0.3em;
+	margin-left:5px;
+	background:#EAEAEA;
+}
+
+button:focus {
+	outline: none;
+}
+
+.clicked {
+	background:#FF0;
+}
+
+/*other*/
+.legend {
+	display: inline-block; 
+	position: absolute;
+	margin-top:30px;
+	left:60%; 
+}
+
+.icon-outline {
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+
+.sources {
+	margin:auto;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	width: 75%;
+	border: 1px solid black;
+	border-radius:0.3em;
+}
+
+.resources {
+	vertical-align:top;
+	text-align: left;
+	display: inline-block;
+	margin-top:20px;
+}
+
+fieldset { 
+	padding: 10px 20px;
+	border-radius:0.3em;
+}
